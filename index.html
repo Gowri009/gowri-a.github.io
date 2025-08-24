@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowri A – Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .photo-hover:hover { transform: scale(1.05); transition: 0.4s; }
+    .skill-card { transition: transform 0.3s, box-shadow 0.3s; }
+    .skill-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+  <section class="min-h-screen flex flex-col md:flex-row items-center justify-center text-white px-10">
+    <div class="md:w-1/2 flex justify-center mb-8 md:mb-0" data-aos="fade-right">
+      <img src="gowri.jpg" alt="Gowri A" class="w-80 h-96 object-cover shadow-2xl border-4 border-white photo-hover">
+    </div>
+    <div class="md:w-1/2 md:pl-10 text-center md:text-left" data-aos="fade-left">
+      <h1 class="text-5xl font-bold mb-4">Hi, I'm <span class="text-yellow-200">Gowri A</span></h1>
+      <p class="text-lg mb-6">B.E. Computer Science and Engineering</p>
+      <div class="space-x-3">
+        <a href="https://www.linkedin.com/in/gowri-as" target="_blank" class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-500">LinkedIn</a>
+        <a href="https://github.com/Gowri009" target="_blank" class="bg-gray-900 px-4 py-2 rounded-lg shadow hover:bg-gray-700">GitHub</a>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white text-gray-800 px-6 py-16" data-aos="zoom-in">
+    <h2 class="text-3xl font-bold text-pink-600 mb-4">About Me</h2>
+    <p class="max-w-2xl mx-auto mb-6">
+      I am Gowri A, pursuing B.E. Computer Science at SNS College of Engineering (CGPA 8.27).  
+      Passionate about building applications, solving problems, and learning new technologies.
+    </p>
+    <div class="text-center">
+      <button onclick="openModal()" class="bg-green-600 text-white px-5 py-2 rounded-lg shadow hover:bg-green-500">
+        🎓 View Education
+      </button>
+    </div>
+  </section>
+  <div id="eduModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-xl max-w-lg w-full p-6 relative shadow-lg">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-xl">&times;</button>
+      <h2 class="text-2xl font-bold text-green-600 mb-4">Education</h2>
+      <div class="space-y-4">
+        <div class="p-4 border rounded-lg">
+          <h3 class="font-semibold">B.E. Computer Science and Engineering</h3>
+          <p class="text-sm text-gray-600">SNS College of Engineering, Coimbatore</p>
+          <p class="text-gray-700">CGPA: <b>8.27</b> (2022 – 2026)</p>
+        </div>
+        <div class="p-4 border rounded-lg">
+          <h3 class="font-semibold">Higher Secondary Education (HSC)</h3>
+          <p class="text-sm text-gray-600">Sathya Sai Matriculation Higher Secondary School</p>
+          <p class="text-gray-700">Percentage: <b>86%</b> (2022)</p>
+        </div>
+        <div class="p-4 border rounded-lg">
+          <h3 class="font-semibold">SSLC</h3>
+          <p class="text-sm text-gray-600">Sathya Sai Matriculation Higher Secondary School</p>
+          <p class="text-gray-700">Percentage: <b>95%</b> (2020)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="bg-gradient-to-r from-green-400 via-teal-500 to-blue-500 text-white px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white text-gray-800 rounded-xl p-6 shadow skill-card" data-aos="flip-left">
+        <h3 class="font-bold">Smart Offline Chatbot</h3>
+        <p class="text-sm mt-2">Python NLP-based chatbot for offline communication.</p>
+      </div>
+      <div class="bg-white text-gray-800 rounded-xl p-6 shadow skill-card" data-aos="flip-left" data-aos-delay="200">
+        <h3 class="font-bold">Financial Management System</h3>
+        <p class="text-sm mt-2">Java + SQL system to track and manage financial records.</p>
+      </div>
+      <div class="bg-white text-gray-800 rounded-xl p-6 shadow skill-card" data-aos="flip-left" data-aos-delay="400">
+        <h3 class="font-bold">AI-Based Food Quality Assessment</h3>
+        <p class="text-sm mt-2">ML project to assess food quality using Python.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-100 text-gray-900 px-6 py-16">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-10 text-center" data-aos="fade-down">Skills</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-brands fa-python text-4xl text-yellow-500 mb-3"></i>
+        <h3 class="font-semibold">Python</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold">JavaScript</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-database text-4xl text-green-600 mb-3"></i>
+        <h3 class="font-semibold">MySQL</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-brands fa-html5 text-4xl text-orange-600 mb-3"></i>
+        <h3 class="font-semibold">HTML</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="500">
+        <i class="fa-brands fa-css3-alt text-4xl text-blue-600 mb-3"></i>
+        <h3 class="font-semibold">CSS</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="600">
+        <i class="fa-brands fa-github text-4xl text-gray-800 mb-3"></i>
+        <h3 class="font-semibold">GitHub</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="700">
+        <i class="fa-solid fa-code text-4xl text-purple-600 mb-3"></i>
+        <h3 class="font-semibold">DSA</h3>
+      </div>
+      <div class="bg-white rounded-xl p-6 text-center skill-card" data-aos="fade-up" data-aos-delay="800">
+        <i class="fa-solid fa-paintbrush text-4xl text-pink-500 mb-3"></i>
+        <h3 class="font-semibold">Canva</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white text-center px-6 py-16" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4">Contact</h2>
+    <p class="mb-4">Feel free to reach out:</p>
+    <div class="space-x-4">
+      <a href="mailto:gowrias2004@gmail.com" class="bg-white text-purple-700 px-4 py-2 rounded-lg hover:bg-gray-100">Email</a>
+      <a href="tel:+919500464754" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Call</a>
+      <a href="https://www.linkedin.com/in/gowri-as" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-lg hover:bg-gray-100">LinkedIn</a>
+      <a href="https://github.com/Gowri009" target="_blank" class="bg-white text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100">GitHub</a>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+
+    function openModal() {
+      document.getElementById('eduModal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('eduModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
