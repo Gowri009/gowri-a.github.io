@@ -1,0 +1,44 @@
+.photo-hover:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.skill-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#eduModal {
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+section a {
+  transition: 0.3s ease;
+}
+section a:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .photo-hover {
+    width: 200px;
+    height: 250px;
+  }
+}
